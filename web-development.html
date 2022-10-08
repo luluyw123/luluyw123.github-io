@@ -59,12 +59,12 @@
       <!-- ============================================-->
 
       <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand" href=""><img src="static/picture/logo-n.png" height="45" alt="logo"></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="static/picture/logo-n.png" height="45" alt="logo"></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="">Home</a></li>
+              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="pricing.html">Pricing</a></li>
-              <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="web-development.html">Web Development</a></li>
+              <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="">Web Development</a></li>
               <li class="nav-item px-2"><a class="nav-link" aria-current="page" href="user-research.html">User Research</a></li>
             </ul><a class="btn btn-primary order-1 order-lg-0" href="#!">Sign Up</a>
             <form class="d-flex my-3 d-block d-lg-none"><input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"><button class="btn btn-outline-primary" type="submit">Search</button></form>
@@ -76,35 +76,36 @@
           </div>
         </div>
       </nav>
-      <section class="pt-6 bg-600" id="home">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 w-100" src="static/picture/hero-header.png" width="470" alt="hero-header"></div>
-            <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
-              <h4 class="fw-bold font-sans-serif">Become Master</h4>
-              <h1 class="fs-6 fs-xl-7 mb-5">Learn New Skills Online Find Best Courses</h1><a class="btn btn-primary me-2" href="#!" role="button">Get A Quote</a><a class="btn btn-outline-secondary" href="#!" role="button">Read more</a>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section class="py-0" style="margin-top:-5.8rem">
+      <section class="pb-11 pt-7 bg-600">
         <div class="container">
           <div class="row">
-            <div class="card card-span bg-secondary">
-              <div class="card-body">
-                <div class="row flex-center gx-0">
-                  <div class="col-lg-4 col-xl-2 text-center text-xl-start"><img src="static/picture/funfacts.png" width="170" alt="..."></div>
-                  <div class="col-lg-8 col-xl-4">
-                    <h1 class="text-light fs-lg-4 fs-xl-5">Upcoming Our <span class="text-primary">Basic in Python </span>Course!</h1>
-                  </div>
-                  <div class="col-lg-12 col-xl-6">
-                    <h1 class="display-1 text-light text-center text-xl-end">11 : 02 : 45 : 21</h1>
-                  </div>
-                </div>
-              </div>
+            <div class="col-12">
+              <h6 class="font-sans-serif text-primary fw-bold">Course category</h6>
+              <h1 class="mb-6">Web Development</h1>
+              <form class="row g-3">
+                <div class="col-sm-6 col-md-3"><label class="form-label" for="inputCategories">Categories</label><select class="form-select" id="inputCategories">
+                    <option selected="selected">Web development</option>
+                    <option value="1">UX designer</option>
+                  </select></div>
+                <div class="col-sm-6 col-md-3"><label class="form-label" for="inputLevel">Level</label><select class="form-select" id="inputLevel">
+                    <option selected="selected">All Level</option>
+                    <option value="1">Level 1 </option>
+                    <option value="2">Level 2 </option>
+                    <option value="3">Level 3</option>
+                  </select></div>
+                <div class="col-sm-6 col-md-3"><label class="form-label" for="inputLanguage">Language</label><select class="form-select" id="inputLanguage">
+                    <option selected="selected">English</option>
+                    <option value="1">Bangla</option>
+                    <option value="2">Hindi</option>
+                  </select></div>
+                <div class="col-sm-6 col-md-3"><label class="form-label" for="inputInstructor">Instructor</label><select class="form-select" id="inputInstructor">
+                    <option selected="selected">All Instructor </option>
+                  </select></div>
+                <div class="col-auto z-index-2"><button class="btn btn-primary" type="submit">Submit</button></div>
+              </form>
             </div>
           </div>
         </div><!-- end of .container-->
@@ -115,10 +116,9 @@
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
-      <section>
+      <section class="pb-0" style="margin-top:-17rem">
         <div class="container">
           <div class="row">
-            <h1 class="text-center mb-5"> Top Featured Courses</h1>
             <div class="col-md-4 mb-4">
               <div class="card h-100"><img class="card-img-top w-100" src="static/picture/design.png" alt="courses">
                 <div class="card-body">
@@ -162,7 +162,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-4">
-              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/user-research.png" alt="courses">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/user-design.png" alt="courses">
                 <div class="card-body">
                   <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">User Research for User Experience Design</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">The Museum of Modern Art</a>
                 </div>
@@ -182,75 +182,54 @@
                 </div>
               </div>
             </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/user-research.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Modern and Contemporary Art and Design</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">The Museum of Modern Art</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/photographs.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Advance on Seeing Through Photographs</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">Duke University</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/ux.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Modern and Contemporary Art and Design</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">The Museum of Modern Art</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/design.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">User Research for User Experience Design</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">The Museum of Modern Art</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/critical-thinking.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Introduction to Logic and Critical Thinking</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">Duke University</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card h-100"><img class="card-img-top w-100" src="static/picture/art-design-1.png" alt="courses">
+                <div class="card-body">
+                  <h5 class="font-sans-serif fw-bold fs-md-0 fs-lg-1">Modern and Contemporary Art and Design</h5><a class="text-muted fs--1 stretched-link text-decoration-none" href="#!">The Museum of Modern Art</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div><!-- end of .container-->
       </section><!-- <section> close ============================-->
       <!-- ============================================-->
 
 
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="pt-0">
-        <div class="container">
-          <div class="row h-100 align-items-center">
-            <div class="col-md-12 col-lg-6 h-100">
-              <div class="card card-span text-white h-100"><img class="w-100" src="static/picture/student-feedback.png" alt="...">
-                <div class="card-body px-xl-5 px-md-3 pt-0">
-                  <div class="d-flex flex-column align-items-center bg-200" style="margin-top:-2.4rem;">
-                    <h5 class="mt-3 mb-0">Kimmie Vo</h5>
-                    <p class="text-muted">Junior Designer</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 col-lg-6 h-100">
-              <h1 class="my-4">Successful Student<br><span class="text-primary">Feedback</span></h1>
-              <p>Take courses from the world’s best instructors and universities. Courses include recorded auto-graded and peer-reviewed assignments, video lectures, and community discussion forums. When you complete a course, you’ll be eligible to receive a shareable electronic Course Certificate for a small fee.</p>
-              <div class="mt-6">
-                <h5 class="font-sans-serif fw-bold mb-3">The courses that Kimmie has taken</h5>
-                <div class="card card-span bg-600">
-                  <div class="card-body">
-                    <div class="row flex-center gx-0">
-                      <div class="col-lg-4 col-xl-3 text-center text-xl-start"><img src="static/picture/art-design.png" width="120" alt="courses"></div>
-                      <div class="col-lg-8 col-xl-9">
-                        <h5 class="font-sans-serif fw-bold">Modern and Contemporary Art and Design</h5>
-                        <p class="text-muted fs--1">The Museum of Modern Art</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
-
-      <section>
-        <div class="bg-holder" style="background-image:url(static/image/funfacts-2-bg.png);background-position:center;background-size:cover;"></div>
-        <!--/.bg-holder-->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 col-lg-3 text-center mb-5"><img src="static/picture/published.png" height="100" alt="...">
-              <h1 class="my-2">768</h1>
-              <p class="text-info fw-bold">COURSES PUBLISHED</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 text-center mb-5"><img src="static/picture/instructors.png" height="100" alt="...">
-              <h1 class="my-2">120</h1>
-              <p class="text-info fw-bold">EXPERT INSTRUCTORS</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 text-center mb-5"><img src="static/picture/learners.png" height="100" alt="...">
-              <h1 class="my-2">8300</h1>
-              <p class="text-info fw-bold">HAPPY LEARNERS</p>
-            </div>
-            <div class="col-sm-6 col-lg-3 text-center mb-5"><img src="static/picture/awards.png" height="100" alt="...">
-              <h1 class="my-2">32</h1>
-              <p class="text-info fw-bold">AWARDS ACHIEVED</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       <!-- ============================================-->
       <!-- <section> begin ============================-->
