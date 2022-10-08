@@ -1,0 +1,168 @@
+.searchInfo .searchTit{height: 34px; background-color: #fff; padding:10px 50px; position: relative; border-bottom: 1px solid #E2E2E2;}
+.searchInfo .searchTit .returnUrl{position: absolute; left:10px; top:10px; display: block; background:url('../image/search_return.png') no-repeat 8px 8px; background-size: 9px; width:20px; height: 30px;}
+.searchInfo .searchTit .clearUrl{position: absolute; right:10px; top:6px; color:#555; line-height: 40px;}
+.searchInfo .searchTit .searchText{position: relative; display: block; height: 32px; border-radius: 4px; background: #F2F2F2 url('../image/search_2.png') no-repeat 10px center; padding:0 30px 0 35px; overflow: hidden; background-size: 16px;}
+.searchInfo .searchTit .searchText input{border:0; width:100%; height: 32px; background-color:#F2F2F2; line-height: 32px;}
+.searchInfo .searchTit .searchText .clearText{position: absolute; right:5px; top:8px; color:#999; font-size: 22px; background: url('../image/emptyText.png') no-repeat; background-size: 16px; width: 20px; height: 20px;}
+
+.searchInfo .searchC{ margin-bottom: 10px; padding:10px; background-color: #fff; overflow: hidden;}
+.searchInfo .titInfo{height: 40px; line-height: 40px; margin-bottom: 10px;}
+.searchInfo .titInfo em{display: inline-block; background:url('https://s.dlssyht.cn/images/wap/tiit_icon.png') no-repeat left center; padding-left: 15px; color:#555; font-size: 14px;}
+.searchInfo .titInfo .historyTit{ background:url('../image/history_icon.png') no-repeat left center; padding-left: 28px; background-size: 18px;}
+.searchInfo .titInfo .hotTit{ background:url('../image/hot_icon.png') no-repeat left center; padding-left: 28px; background-size: 18px;}
+.searchInfo .titInfo .delBtn{float: right; display: inline-block; width:20px; height: 20px; margin-top: 5px;}
+.searchInfo .titInfo .delBtn img{max-width: 100%;}
+.searchInfo .searchC .searchList li{float: left; margin:0 10px 10px 0;}
+.searchInfo .searchC .searchList li a{display: inline-block; overflow: hidden; height: 30px; line-height: 30px; padding:0 10px; border:1px solid #e4e4e4; border-radius: 5px; color:#777;}
+.searchInfo .noPadding{padding:0;}
+.searchInfo .noPadding .titInfo{padding:0 10px;}
+
+.searchInfo .imgList1 dd{display: block; float: left; width:50%;}
+.searchInfo .imgList1 dd .listMain{margin:0 5px 10px;}
+.searchInfo .imgList1 .imgList1 dd .pic{display: block; margin-bottom: 10px;}
+.searchInfo .imgList1 dd .pic img{max-width: 100%;}
+.searchInfo .imgList1 dd h2{color:#888; font-size: 14px; margin-bottom: 5px; height: 22px; line-height: 22px; overflow: hidden;}
+.searchInfo .imgList1 dd em{color:#f90; font-size: 12px; height: 22px; line-height: 22px;}
+
+.searchInfo .imgList2 dd{padding:10px 0; margin:0 10px; border-bottom: 1px solid #E1E1E1; overflow: hidden;}
+.searchInfo .imgList2 dd:last-child{border-bottom: 0;}
+.searchInfo .imgList2 dd .pic{display: block; float: right; width:60px; height: 60px; margin-left: 10px;}
+.searchInfo .imgList2 dd .pic img{max-width: 100%;}
+.searchInfo .imgList2 dd .textInfo{overflow: hidden; line-height: 22px;}
+.searchInfo .imgList2 dd h2{color:#555; font-size: 14px;}
+.searchInfo .imgList2 dd p{color:#999; font-size: 12px;}
+
+.searchInfo .imgList3 dd{margin-bottom: 10px; overflow: hidden;}
+.searchInfo .imgList3 dd .imgInfo{padding:10px 0; margin:0 10px; border-bottom: 1px solid #E1E1E1; overflow: hidden;}
+.searchInfo .imgList3 dd:last-child .imgInfo{border-bottom: 0;}
+.searchInfo .imgList3 dd .pic{display: block; float: left; width:100px; height: 100px; margin-right: 10px;}
+.searchInfo .imgList3 dd .pic img{max-width: 100%;}
+.searchInfo .imgList3 dd .textInfo{overflow: hidden; line-height: 22px;}
+.searchInfo .imgList3 dd h2{color:#555; font-size: 14px; margin-bottom: 5px;}
+.searchInfo .imgList3 dd .labelList{display: block; margin-bottom: 5px; overflow: hidden;}
+.searchInfo .imgList3 dd .labelList em{display: block; float: left; margin:0 2px 2px 0; border-radius: 2px; padding:0 5px; font-size: 12px; line-height: 22px;}
+.searchInfo .imgList3 dd .labelList em.color1{border:1px solid #f90; color:#f90;}
+.searchInfo .imgList3 dd .labelList em.color2{border:1px solid #348BED; color:#348BED;}
+.searchInfo .imgList3 dd .labelList em.color3{border:1px solid #FF6060; color:#FF6060;}
+.searchInfo .imgList3 dd p{color:#999; font-size: 12px; margin-bottom: 5px;}
+.searchInfo .imgList3 dd .listBtn{overflow: hidden;}
+.searchInfo .imgList3 dd .listBtn a{display: block; line-height: 30px; padding:0 10px; float: right; background-color: #f90; border-radius: 2px; color:#fff; font-size: 14px;}
+.searchInfo .imgList3 dd .listBtn em{color:#ff4848; font-size: 14px; line-height: 30px;}
+.searchInfo .imgList3 dd .listBtn em.color1{color:#ffb039;}
+.searchInfo .imgList3 dd .specInfo{padding:10px; overflow: hidden;}
+.searchInfo .imgList3 dd .specInfo li{min-width:50%; max-width: 100%; float: left; line-height: 25px;}
+.searchInfo .imgList3 dd .specInfo label{color:#999;}
+.searchInfo .imgList3 dd .specInfo em{color:#555;}
+
+.searchInfo .imgList4 dd{border-bottom: 1px solid #E1E1E1; padding:10px;}
+.searchInfo .imgList4 dd:last-child{border-bottom: 0;}
+.searchInfo .imgList4 dd h2{max-height: 44px; line-height: 22px; font-size: 14px; color:#555; margin-bottom: 5px;}
+.searchInfo .imgList4 dd p{font-size: 12px; color:#888;}
+.searchInfo .imgList4 dd p em{float: right;}
+
+.searchInfo .imgList5 li{border-bottom: 1px solid #E1E1E1; padding:10px 80px 10px 10px; position: relative; overflow: hidden;}
+.searchInfo .imgList5 li:last-child{border-bottom: 0;}
+.searchInfo .imgList5 li h2{line-height: 30px; height: 30px; overflow: hidden;}
+.searchInfo .imgList5 li .downBtn{position: absolute; right:10px; border:1px solid #f90; color:#f90; font-size: 14px; border-radius: 4px; padding:5px 10px;}
+
+.searchInfo .imgList6 li{border-bottom: 1px solid #E1E1E1; padding:10px; position: relative; overflow: hidden;}
+.searchInfo .imgList6 li:last-child{border-bottom: 0;}
+.searchInfo .imgList6 li h2{line-height: 30px; height: 30px; overflow: hidden;}
+
+.searchInfo .moreBtn{background-color: #fff; display: block; text-align: center; font-size: 14px; color:#f90; line-height: 40px; border-color:#E1E1E1; border-style: solid; border-width: 1px 0;}
+
+.searchType1{background-color: #fff; padding:10px; overflow: hidden;}
+.searchType1 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center;}
+.searchType1 .searchBg input{width:50%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType2{background-color: #fff; padding:10px; overflow: hidden;}
+.searchType2 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center;}
+.searchType2 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType3{background-color: #fff; padding:10px 50px; overflow: hidden; position: relative;}
+.searchType3 .searchLeft,
+.searchType3 .searchRight{display: block; width:24px; height: 24px; position: absolute;}
+.searchType3 .searchLeft img,
+.searchType3 .searchRight img{width:100%;}
+.searchType3 .searchLeft{left:10px; top:21px;}
+.searchType3 .searchRight{right:10px; top:20px;}
+.searchType3 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center;}
+.searchType3 .searchBg input{width:55%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType4{background-color: #fff; padding:10px 50px; overflow: hidden; position: relative;}
+.searchType4 .searchLeft,
+.searchType4 .searchRight{display: block; width:24px; height: 24px; position: absolute;}
+.searchType4 .searchLeft img,
+.searchType4 .searchRight img{width:100%;}
+.searchType4 .searchLeft{left:10px; top:21px;}
+.searchType4 .searchRight{right:10px; top:20px;}
+.searchType4 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5em; text-align: center;}
+.searchType4 .searchBg input{width:55%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType5{background-color: #555; padding:10px 50px; overflow: hidden; position: relative;}
+.searchType5 .searchLeft,
+.searchType5 .searchRight{display: block; width:24px; height: 24px; position: absolute;}
+.searchType5 .searchLeft img,
+.searchType5 .searchRight img{width:100%;}
+.searchType5 .searchLeft{left:10px; top:21px;}
+.searchType5 .searchRight{right:10px; top:20px;}
+.searchType5 .searchBg{background: #fff url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5em; text-align: center;}
+.searchType5 .searchBg input{width:55%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType6{background-color: #fff; padding:10px; overflow: hidden; position: relative;}
+.searchType6 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 50px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 70px; border-radius: 5px; text-align: center; position: relative;}
+.searchType6 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+.searchType6 .searchBg .searchBtn{display: inline-block; position: absolute; right:0; top:10px; line-height: 20px; border-left: 1px solid #ccc; padding:0 6px;}
+
+.searchType7{background-color: #fff; padding:10px 10px 10px 50px; overflow: hidden; position: relative;}
+.searchType7 .searchLeft{display: block; left:10px; top:21px; width:24px; height: 24px; position: absolute;}
+.searchType7 .searchLeft img{width:100%;}
+.searchType7 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 50px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 70px; border-radius: 5px; text-align: center; position: relative;}
+.searchType7 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+.searchType7 .searchBg .searchBtn{display: inline-block; position: absolute; right:0; top:10px; line-height: 20px; border-left: 1px solid #ccc; padding:0 6px;}
+
+.searchType8{background-color: #fff; padding:10px 60px 10px 10px; overflow: hidden; position: relative;}
+.searchType8 .searchBtn{display: block; width:50px; height: 40px; line-height: 40px; text-align: center; position: absolute; right:10px; top:10px;}
+.searchType8 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center; position: relative;}
+.searchType8 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType9{background-color: #fff; padding:10px 60px 10px 50px; overflow: hidden; position: relative;}
+.searchType9 .searchLeft{display: block; left:10px; top:21px; width:24px; height: 24px; position: absolute;}
+.searchType9 .searchLeft img{width:100%;}
+.searchType9 .searchBtn{display: block; width:50px; height: 40px; line-height: 40px; text-align: center; position: absolute; right:10px; top:10px;}
+.searchType9 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center; position: relative;}
+.searchType9 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType10{background-color: #fff; padding:10px 70px 10px 10px; overflow: hidden; position: relative;}
+.searchType10 .searchBtn{display: block; width:50px; height: 40px; line-height: 40px; text-align: center; position: absolute; right:10px; top:10px; background-color: #09f; color:#fff; border-radius: 5px;}
+.searchType10 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center; position: relative;}
+.searchType10 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+.searchType11{background-color: #fff; padding:10px 70px 10px 50px; overflow: hidden; position: relative;}
+.searchType11 .searchLeft{display: block; left:10px; top:21px; width:24px; height: 24px; position: absolute;}
+.searchType11 .searchLeft img{width:100%;}
+.searchType11 .searchBtn{display: block; width:50px; height: 40px; line-height: 40px; text-align: center; position: absolute; right:10px; top:10px; background-color: #09f; color:#fff; border-radius: 5px;}
+.searchType11 .searchBg{background: #F2F2F2 url('https://s.dlssyht.cn/images/wap/search_3.png') no-repeat right 8px center; background-size: 18px; height: 40px; line-height: 40px; display: block; padding-right: 30px; border-radius: 5px; text-align: center; position: relative;}
+.searchType11 .searchBg input{width:80%; height: 38px; background: transparent url('../image/search_2.png') no-repeat left center; padding-left:30px; background-size: 25px; border:0;}
+
+
+@media screen and (max-width:320px){
+	.searchInfo .searchTit .searchText{width: 66%;}
+}
+@media screen and (min-width: 321px) and (max-width :359px){
+	.searchInfo .searchTit .searchText{width: 66%;}
+	
+}
+@media screen and (min-width:360px) and (max-width : 479px){
+	.searchInfo .searchTit .searchText{width: 71%;}
+	
+}
+@media screen and (min-width:480px) and (max-width :639px){
+	.searchInfo .searchTit .searchText{width: 80%;}
+	
+}
+
+@media screen and (min-width:640px) and (max-width :750px){
+	.searchInfo .searchTit .searchText{width: 85%;}
+	
+}

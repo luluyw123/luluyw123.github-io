@@ -1,0 +1,364 @@
+<!DOCTYPE html>  
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<title>分类</title>
+	<link rel="stylesheet" type="text/css" href="static/css/classify_style3_animate.css">
+	<link rel="stylesheet" type="text/css" href="static/css/classify_style3_index.css">
+    <script src="static/js/classify_style3_jquery.min.js"></script>
+    <script type="text/javascript" src="static/js/classify_style3_fontsize.js"></script>
+    <script type="text/javascript" src="static/js/classify_style3_flexible.js"></script>
+	<link type="text/css" rel="stylesheet" href="static/css/base.css">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta content="true" name="HandheldFriendly">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="standard" name="layoutmode">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="webkit" name="renderer">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no ,target-densitydpi=medium, viewport-fit=cover" name="viewport" id="viewport">
+<meta name="applicable-device" content="mobile">
+
+<script type="text/javascript">
+        var user_name = "luluyw1234";
+    var aGlobalBannerHeight = {};
+    var is_bianji       = parseInt("0");
+    var wap_zz_userid   = "";
+    var wap_is_app      = parseInt("0");
+    var wap_is_ios      = parseInt("0");
+    var wap_userid      = "2206698";
+    var css_channel_id  = '0';
+    var channel_type  = parseInt('');
+    var APP_V           = '0';
+    var AGENT_ID        = '';
+    var IS_NEWS_ARTICEL        = parseInt('0');
+    var LANGUAGE_TYPE        = parseInt('0');
+    var is_wap_view     = parseInt(0);
+    var show_check     = parseInt(0);
+            var use_wxchat_map = 0;
+    </script>
+<script type="text/javascript" src="static/js/Language.js"></script>
+    <script type="text/javascript" src="static/js/cookies.js"></script>
+    <script src="static/js/jquery-1.7.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="static/css/swiper-4.3.3.min.css">
+    <script src="static/js/swiper-4.3.3.min.js"></script>
+    <script type="text/javascript" src="static/js/swipe.min.js"></script>
+<link type="text/css" rel="stylesheet" href="static/css/sliding_verification_style.css">
+<script type="text/javascript" src="static/js/sliding_tn_code.js"></script>
+<script type="text/javascript" src="static/js/ajax_info.js"></script>
+<script src="static/js/md5.js"></script>
+<script type="text/javascript" src="static/js/public.js"></script>
+<link type="text/css" rel="stylesheet" href="static/css/web_frame.css">
+<link type="text/css" rel="stylesheet" href="static/css/wxShareAlert.css">
+<link type="text/css" rel="stylesheet" id="webSkinCss" href="static/css/webskin.css">
+<link type="text/css" rel="stylesheet" href="static/css/style.css">
+    <!--change_top_tpl-->
+    <script type="text/javascript" src="static/js/new_wap_public.js"></script>
+            <link type="text/css" rel="stylesheet" href="static/css/index.css">
+                    <script type="text/javascript" src="static/js/wapShare.js"></script>
+                                                <script type="text/javascript" src="static/js/doc_json.js"></script>                                        <link type="text/css" rel="stylesheet" href="static/css/icomoon_style.css">
+<!-- 图标文字 -->
+<link rel="stylesheet" type="text/css" href="static/css/iconfont.css">
+<link rel="stylesheet" type="text/css" href="static/css/iconfontNew.css">
+<!-- end -->
+<link type="text/css" rel="stylesheet" href="static/css/base_module_style.min.css">
+    <link type="text/css" rel="stylesheet" href="static/css/user_define_css-2206698_0_1665260422_1.css">
+	<script type="text/javascript">
+		$(function(){
+						$('.wrapper').navbarscroll();
+			// 分类切换
+			$(".classify-index").click(function(){
+				$(this).addClass("on this_font_color").siblings().removeClass("on this_font_color");
+				// $(this).css("color",'#00a2ff').siblings().css("color",'#333');
+				$('#list_tag').val($(this).attr('alt'));
+				$(".tab-list").hide().eq($(this).index()).show();
+			});
+
+			if(window.android){
+				window.android.updateRefreshType(-1);
+			}
+		});
+		//频道获取分类
+		function get_big_class(cid){
+			cid=parseInt(cid);
+			if(!isNaN(cid) && cid){
+				window.location.href='/wap/proclass.php?username=luluyw1234&wap=1&pro_cid='+cid;
+			}
+		}
+		// 获取小类
+		function OpenSub(_this) {
+			var big_id = $(_this).attr('alt');
+			var old_big_id = $('input[name=old_big_id]').val();
+			var use_list_alt = 0;
+			if (old_big_id > 0) {
+				// 当前选中的分类
+				$(".category-left").find('.category-list').each(function () {
+					if ($(this).hasClass('at')) {
+						use_list_alt = parseInt($(this).attr('alt'));
+						return true;
+					}
+				});
+			}
+			if ((big_id != old_big_id) || (use_list_alt && old_big_id != use_list_alt)) {
+				ajax_bigclass_list(big_id);
+				$(_this).addClass("at").siblings().removeClass("at");
+				$('input[name=old_big_id]').val(big_id);
+			}
+		}
+	
+		function ajax_bigclass_list(big_id) {
+			var pro_cid = $('input[name=pro_cid]').val(); 
+			$('#sub_more').html('<div style="text-align: center;padding:1rem 0;margin: 42%;"><img src="https://s.dlssyht.cn/images/wap/loading.gif"></div>');
+			$.ajax({
+				url:'/wap/proclass_ajaxlist.php?username=luluyw1234&pro_cid='+pro_cid+'&style=1&ajax_big_id='+big_id,
+				type:'get',
+				success: function(data){
+					if(data!=''){
+						$('#sub_more').html(decodeHtmlEntity(data));
+					} else {
+						$('#sub_more').html('<div style="text-align: center;padding:1rem 0;margin: 20%;"><img src="https://s.dlssyht.cn/templates/wap/publish_coupon/images/no.png" style="width: 1.8rem;height: 1.8rem;"><p style="margin-top:0.2rem;font-size: 0.24rem;color: #999;">'+"&#24744;&#36824;&#27809;&#26377;&#28155;&#21152;&#20219;&#20309;&#20998;&#31867;"+'~</p></div>');
+					}
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+	<div class='fixed-head'>
+  <!-- head -->
+    <div class='head'>
+      <a href="wap_luluyw12342.html" class="ev_t_home">
+                    <span class="FT-page FT-page-fanhui iColor"></span>
+        </a>
+        <form id="search_form" name="search_form" method="get" action="/wap/web_search.php" class="ev_t_top_search_input">
+          <input name="username" value="luluyw1234" type="hidden">
+          <input name="navtype" value="10" type="hidden">
+        <div class='search'>
+          <img src='static/picture/search.png' class='search-img' id="go_search">
+          <input name="keyword" id="top_keyword" placeholder='&#25628;&#32034;'>
+        </div>
+    </form>
+    <script type="text/javascript">
+      $('#go_search').click(function(){
+        var keyword = $.trim($('.ev_t_top_search_input #top_keyword').val());
+        if (!keyword) {
+          showAllzz($weisiteLa.GuanJianZiBuNengWeiKong);
+          return false;
+          }
+        $('#search_form').submit();
+      });
+    </script>
+                            <a href="denglu-luluyw1234_1.html" data-user="0" class="memberIcon">
+              <img class='person' src='static/picture/person.png'>
+            </a>
+                      </div>
+  <!-- head end -->
+  </div>			<div style="text-align: center;padding:1rem 0;">
+			<img src="static/picture/no.png" style="width: 1.8rem;height: 1.8rem;">
+			<p style="margin-top:0.2rem;font-size: 0.24rem;color: #999;">&#24744;&#36824;&#27809;&#26377;&#28155;&#21152;&#20219;&#20309;&#20869;&#23481;~</p>
+		</div>
+		<input type="hidden" name="pro_cid" value="">
+	<input type="hidden" name="old_big_id" value="0">
+	<script type="text/javascript" src="static/js/classify_style3_iscroll.js"></script>
+	<script type="text/javascript" src="static/js/classify_style3_navbarscroll.js"></script>
+	<!-- 2020-11-26 浮动客服开始 -->
+<!-- 2020-11-26 浮动客服结束 -->
+<!-- 微信弹窗开始 -->
+<div class="max-wx-wrap old-food-max-wx" id="fixedOnlineMore">
+  <div class="max-wx">
+    <div class="wx-con"></div>
+    <div class="wx-foot">取消</div>
+  </div>
+  <div class="alert-box">
+    <i class="close"></i>
+    <div class="alert-inner"></div>
+  </div>
+</div>
+<!-- 微信弹窗结束 -->
+    
+    
+    
+
+                        <div style="width:100%;line-height:45px;text-align:center;" class="ev_zhichi">
+                                    <a href="javascript:;" style="display:block;"><img src="static/picture/btlogo.png" alt="建站ABC" width="76" height="26" style="border:0px;"></a>
+                    <a href="javascript:;" style="color:#c7c7c7;line-height:24px;margin-bottom:30px;font-size:12px">
+                        建站ABC提供技术支持
+                    </a>
+                            </div>
+                                <!--文章详细页不显示底部-->
+            <div class="toolMenuBg" id="tool_menu_bg"></div>
+            <div class="toolMenu" id="tool_menu">
+                <menu class="toolBut q ">
+                                                                                            <li id="toolHome" sorts="13" style=" width:100%;">
+                                                                    <a id="index_link" href="wap_luluyw12342.html">
+                                                                <b class="icon" id="icon_782011">
+                                                                                                                <img src="static/picture/11133388_1551681057.png" width="20" height="20">
+                                                                    </b>
+                                <strong>首页</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolTel" sorts="12" style="display: none; width:100%;">
+                                                                    <a href="tel:">
+                                                                <b class="icon" id="icon_782012">
+                                                                                                                <img src="static/picture/11133396_1551681074.png" width="20" height="20">
+                                                                    </b>
+                                <strong>电话</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="tootMessage" sorts="11" style="display: none; width:100%;">
+                                                                    <a href="guest_book-luluyw1234.html">
+                                                                <b class="icon" id="icon_782013">
+                                                                                                                <img src="static/picture/11133403_1551681088.png" width="20" height="20">
+                                                                    </b>
+                                <strong>留言</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolMap" sorts="10" style="display: none; width:100%;">
+                                                                    <a href="map-luluyw1234.html">
+                                                                <b class="icon" id="icon_782014">
+                                                                                                                <img src="static/picture/11133409_1551681102.png" width="20" height="20">
+                                                                    </b>
+                                <strong>位置</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolMember" sorts="9" style="display: none; width:100%;">
+                                                                                                            <a href="denglu-luluyw1234_1.html">
+                                                                                                    <b class="icon" id="icon_782015">
+                                                                                                                <img src="static/picture/11133417_1551681112.png" width="20" height="20">
+                                                                    </b>
+                                <strong>会员</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolVoiceSearch" sorts="8" style="display: none; width:100%;">
+                                                                    <a href="voicesearch-luluyw1234_1.html" style="display: none;">
+                                                                <b class="icon" id="icon_782016">
+                                                                                                                <img src="static/picture/toolVoiceSearch.png">
+                                                                    </b>
+                                <strong>语音</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolProClass" cur="" sorts="7" style="display: none; width:100%;">
+                                                                    <a class="cur" href="">
+                                                                <b class="icon" id="icon_782017">
+                                                                                                                <img src="static/picture/toolProductClass.png">
+                                                                    </b>
+                                <strong>分类</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolQQ" sorts="6" style="display: none; width:100%;">
+                                                                    <a href="javascript:;">
+                                                                <b class="icon" id="icon_782018">
+                                                                                                                <img src="static/picture/toolQQ_icon.png">
+                                                                    </b>
+                                <strong>QQ</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolShoppingCar" sorts="5" style="display: none; width:100%;">
+                                                                    <a href="sc_shopcar_add-luluyw1234_1.html">
+                                                                <b class="icon" id="icon_782019">
+                                                                                                                <img src="static/picture/toolShoppingCar_icon.png">
+                                                                    </b>
+                                <strong>购物</strong>
+                                                                </a>
+                            </li>
+                                                                                                <li id="toolTelMessage" sorts="4" style="display: none; width:100%;">
+                                                                    <a href="javascript:;">
+                                                                <b class="icon" id="icon_782020">
+                                                                                                                <img src="static/picture/toolMessage_icon.png">
+                                                                    </b>
+                                <strong>信息</strong>
+                                                                </a>
+                            </li>
+                                                                                </menu>
+            </div>
+                <span class="backTop" id="back_top"><em></em></span>
+        <!--微名片详细页不显示导航-->
+                        <script type="text/javascript">
+                $(function(){
+                    if($(".main").length){
+                        $(".main").css("min-height",$(window).height());
+                    }
+                })
+            </script>
+                <div class="Nzz" id="Nzz"></div>
+    <script language="javascript">
+    var windowW = $(window).width(),windowH = $(window).height();
+    $(window).resize(function(){
+            })
+    $(function(){
+            });
+
+        </script>
+    <!--个人中心不引入侧边栏-->
+                <!--样式文件-->
+    <link href="static/css/login_alert.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="static/js/login_alert.js"></script>
+    <div class="login_alert" style="display: none;"></div>
+
+    <div class="content" id="alert_login_div" style="display: none;">
+        <div class="Close_div">
+            <a href="###" class="Close_a" onclick="close_login_alert()">×</a>
+        </div>
+        <form action="/dom/action/ajax_denglu.php?username=luluyw1234&wap=1" method="post" name="myfrom" id="myfrom">
+            <input type="hidden" name="wap" value="">
+            <input type="hidden" value="" name="trespass" id="trespass">
+            <input type="hidden" id="loginType" name="login_type" value="0">
+            <input type="hidden" name="u_id" id="u_id" value="8ed2dc04058f95f84619037e2d5419e0">
+            
+            <div id="account_login_t">
+                <div class="Head_photo">
+                    <span><img src="static/picture/img.png"></span>
+                    <p>账号登陆</p>
+                </div>
+                <div class="border_div1">
+                    <input name="login_name" id="login_name" type="text" placeholder="您的账号">
+                </div>
+                <!-- <div class="ev_empy"><p id="login_name_msg" class="hint"></p></div> -->
+                <div class="border_div" style="border-bottom: 1px solid #f3f3f3;">
+                    <input name="login_pwd" id="login_pwd" type="password" placeholder="您的密码">
+                    <a href="get_password-luluyw1234_1.html">找回密码</a>
+                </div>
+                <!-- <div class="ev_empy"><p id="login_pwd_msg" class="hint"></p></div> -->
+                
+                <div class="automatism"></div>
+                <a href="###" class="button_a this_color" onclick="login_alert_submit(this)" style="">登录</a>
+                                                            <a href="zhuce-luluyw1234_1.html" class="account_login">没有账号请注册</a>
+                                                </div>
+        </form>
+		        		    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            var a_len = $("#login_a").children("a").length;
+            if (a_len ==1){
+                $(".more_div_a a").css("margin","0 50px");
+            }
+            if (a_len == 0){
+                $(".more_login_div").remove();
+            }
+        })
+    </script>
+    <script src="static/js/site_stats.js" id="SiteStats" data-val="1"></script><!--统计代码（旧）-->
+    <!-- 绑定手机 -->
+<!--统计-->
+<script type="text/javascript">
+    $(function(){
+        $('#wapCountImg').attr('src',"/images/stat.png?username=luluyw1234&client=wap&url="+encodeURI(window.location.href)+"&t=1665260423&new=1&userid=2206698&uv_id=e0c03d131dc8c5e583a3c62bc45578d0&session_id=9hco286gr70137899bo8jvrtvm&title="+encodeURI($("title").text()));
+        //访问时长统计
+        setInterval(function(){
+                $('#countTimeImg').attr('src', "/images/count_time.png?t="+Math.random()+"&new=1");
+            },60000);
+    })
+</script>
+<img id="wapCountImg" src="" style="width: 0;height: 0; display: block;">
+<img id="countTimeImg" src="" style="width: 0;height: 0; display: block;">
+
+
+</body>
+</html>
+<script type="text/javascript">
+	</script>

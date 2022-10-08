@@ -1,0 +1,19 @@
+/*微信下分享弹窗样式*/
+.shareAlert_boxshadow{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.5);top:0;left:0;z-index:100;font-size: 46.875px;}
+.alert_share{width:100%;background:#fff;position: absolute;bottom:0;}
+.alert_share .alert_share_body{display:flex;display:-webkit-flex;flex-wrap: wrap;padding:20px 10px 5px;background:#eee;}
+.alert_share .alert_share_body li{width:49.33%;}
+.alert_share_body li .img{padding:5px;border:1px solid #eee;position:relative;width:50px;height: 50px;margin: 0 auto;}
+.alert_share_body li.active .img{border-color:#f90;}
+.alert_share_body .img img{width:100%;height:100%;background:#eee;}
+.alert_share_body .txt{height: 26px;line-height:26px;text-align: center;font-size:12px;color: #555;}
+.alert_share_body .active .txt{color: #f90;}
+.alert_share_foot{color: #333;font-size: 14px;height:45px;line-height:45px;text-align:center;}
+
+.shareAlert_Img{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.5);top:0;left:0;z-index:100;font-size: 46.875px;display: flex;  flex-direction: column;justify-content: center;align-items: center;}
+.shareAlert_Img img{width: 80%;}
+.shareAlert_Img .closeShare{background: #FFF;text-align: center;line-height: 50px;font-size: 15px;color:#333;width:50px;border-radius:50px;z-index:110;}
+.shareAlert_Img .keep{line-height: 35px;color:#FFF;font-size: 13px;border-radius:18px;background: #222;display:block;width:205px;text-align: center;z-index:110;margin:10px auto;}
+
+.reloadShare{position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.5);top:0;left:0;z-index:100;font-size: 46.875px;display: flex;  flex-direction: column;justify-content: center;align-items: center;}
+.reloadShare .keep{line-height: 35px;color:#FFF;font-size: 13px;border-radius:18px;background: #222;display:block;width:205px;text-align: center;z-index:110;margin:10px auto;}

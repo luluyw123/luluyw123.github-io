@@ -1,0 +1,153 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><script type="text/javascript" src="static/js/api.js"></script><link rel="stylesheet" href="static/css/index1.css"><script src="static/js/jquery-3.0.0.min.js"></script><script src="static/js/layui.js"></script><script src="static/js/md5.js"></script><style>html,
+            body {
+                font-family: "微软雅黑";
+                font-size: 40px;
+                max-width: 750px;
+                margin: 0 auto;
+                background: #eee;
+            }
+
+            button {
+                -webkit-tap-highlight-color: transparent;
+            }
+
+            body,
+            p,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            ul,
+            ol,
+            li,
+            a,
+            input,
+            dl,
+            dt,
+            dd,
+            img {
+                margin: 0;
+
+                padding: 0;
+
+                font-family: "微软雅黑", "宋体", arial, verdana, sans-serif;
+
+                color: #606060;
+
+                border: none;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            em,
+            i {
+                font-style: normal;
+            }
+
+            /*clearfix*/
+
+            .clearfix:after {
+                content: ".";
+
+                display: block;
+
+                height: 0;
+
+                clear: both;
+
+                visibility: hidden;
+            }
+
+            .clearfix {
+                zoom: 1;
+            }
+
+            .hidden {
+                display: none;
+            }
+
+            /*让滚动条隐藏*/
+            body::-webkit-scrollbar {
+                width: 0px;
+            }
+
+            button {
+                border-color: transparent !important;
+                outline: none;
+                cursor: pointer;
+                /* padding: 0 !important; */
+                padding: 0;
+                /* box-sizing: inherit; */
+                background-color: transparent;
+            }
+
+            /*更改导航小圆点的样式*/
+            #fp-nav ul li a.active span,
+            .fp-slidesNav ul li a.active span {
+                background: #fa714d !important;
+                /*这里设置的是活动导航的颜色*/
+                width: 13px;
+                height: 13px;
+                border-radius: 50%;
+            }
+
+            #fp-nav ul li a span,
+            .fp-slidesNav ul li a span {
+                /*这里设置的是非活动导航的颜色*/
+                background-color: #fee4d9;
+                width: 5px;
+                height: 5px;
+            }
+
+            /*文字样式*/
+            #fp-nav ul li .fp-tooltip {
+                color: #000;
+            }</style><link href="static/css/app.ff2a7cb.css" rel="stylesheet"></head><body id="body"><div id="app"></div><script type="text/javascript" src="static/js/manifest.ff2a7cb.js"></script><script type="text/javascript" src="static/js/vendor.ff2a7cb.js"></script><script type="text/javascript" src="static/js/app.ff2a7cb.js"></script></body><script type="text/javascript">/**
+         * @Date: 2020-09-01 17:32:40
+         * @LastEditors: zhouqi
+         * @description: 获取cookie
+         * @param {type} cookieName:键名
+         * @return {type} 键值
+         */
+
+        function getCookie(cookieName) {
+            var allCookies = document.cookie;
+            var cookiePos = allCookies.indexOf(cookieName);
+            //把cookiePos放在值的开始，只要给值加1即可。
+            cookiePos += cookieName.length + 1;
+            //这里容易出问题，所以请大家参考的时候自己好好研究一下
+            var cookieEnd = allCookies.indexOf(";", cookiePos);
+            if (cookieEnd == -1) {
+                cookieEnd = allCookies.length;
+            }
+            var value = allCookies.substring(cookiePos, cookieEnd); //这里就可以得到你想要的cookie的值了。。。
+            return value;
+        }
+        if (getCookie("is_app") == 1 && getCookie("ios") != 1) {
+            var androidBackClick = 0;
+            function androidOnBack() {
+                androidBackClick += 1;
+                if (androidBackClick == 1) {
+                    // 返回上一级
+                    window.android.goBack();
+                    // window.android.show(JSON.stringify({
+                    //   "content": "再按一次退出程序"
+                    // }));
+                    setTimeout(function() {
+                        androidBackClick = 0;
+                    }, 1500);
+                } else if (androidBackClick > 1) {
+                    window.android.close("{}");
+                }
+            }
+            window.android.updateBackupType(
+                JSON.stringify({
+                    type: true,
+                    callback: "androidOnBack()",
+                })
+            );
+        }</script></html>
